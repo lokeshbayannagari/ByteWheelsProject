@@ -195,8 +195,11 @@ public class VehicleDaoImpl implements VehicleDaoActions {
 				bookingDetails.put("bookingID", String.valueOf("  BW_" + new Random().nextInt(100000)));
 				bookingDetails.put("vehicleModel", vehiclemodel.getVehiclemodelname());
 				bookingDetails.put("vehicleNo", vehicle.getVehicleno());
-				bookingDetails.put("fromDate", new Date(fromDate).toString());
-				bookingDetails.put("toDate", new Date(toDate).toString());
+
+				SimpleDateFormat uiFrmt = new SimpleDateFormat("dd/MM/yyyy");
+
+				bookingDetails.put("fromDate", uiFrmt.format(fromDate));
+				bookingDetails.put("toDate", uiFrmt.format(toDate));
 				bookingDetails.put("totalCost", cost.toString());
 
 				sendConfirmationMail(emailId, InvoiceTemplateGenerator.generateHtmlTemplate(bookingDetails));
