@@ -242,7 +242,7 @@ function createPanels(json) {
 				var rowJson = {};
 				rowJson.id = categoryJson.categoryid + "_" + modelJson.modelid;
 				rowJson.modelname = modelJson.modelname;
-				rowJson.modelcost = categoryJson.categorycost;
+				rowJson.modelcost = "$"+categoryJson.categorycost;
 				rowJson.modelcount = modelJson.modelcount;
 				rowJson.link = '<button type="button" class="btn" style="color: white;background-color: #007dc3;">BOOK</button>';
 				oJSONModels[modelIndex] = rowJson;

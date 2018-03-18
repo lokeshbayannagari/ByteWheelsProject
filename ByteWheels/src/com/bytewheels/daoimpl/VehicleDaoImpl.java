@@ -192,7 +192,7 @@ public class VehicleDaoImpl implements VehicleDaoActions {
 
 				HashMap<String, String> bookingDetails = new HashMap<>();
 				bookingDetails.put("name", emailId.split("@")[0]);
-				bookingDetails.put("bookingID", String.valueOf("BI_" + new Random().nextInt(100000)));
+				bookingDetails.put("bookingID", String.valueOf("  BW_" + new Random().nextInt(100000)));
 				bookingDetails.put("vehicleModel", vehiclemodel.getVehiclemodelname());
 				bookingDetails.put("vehicleNo", vehicle.getVehicleno());
 				bookingDetails.put("fromDate", new Date(fromDate).toString());

@@ -44,12 +44,12 @@ public class ByteWheelsException extends Exception {
 
 		/*** Booking ******/
 	 CODE_BOOKING_FAILED_TO_BOOK_CAR(12001,
-								"Currenlty selected car is not available.PLease select other car."),
+								"Currently selected car is not available. Please select other car."),
 	 CODE_BOOKING_INVALID_BOOKING(12002, "Please select the correct car and try."),
 	 
 		/*** Cars ******/
 	 CODE_CARS_FAILED_TO_BOOK_CAR(12005,
-								"Currenlty selected car is not available.PLease select other car."),
+								"Currently selected car is not available. Please select other car."),
 	 CODE_CARS_NOT_AVAILABLE(12006, "Sorry. No car is available."),
 	 
 	 
