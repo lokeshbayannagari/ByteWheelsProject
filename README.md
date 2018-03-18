@@ -28,7 +28,7 @@ CONTENTS OF THIS FILE
 		2.Prerequisites
 #################################
 
-1.JAVA 7 or above
+1.JAVA 8 or above
 2.Eclipse neon or above
 3. Glassfish 4.0  or Payara-4.1.1.164 application server
 4.MySQL 
@@ -69,7 +69,25 @@ https://www.mysql.com/downloads/
 .
 2.Create datasource in payara (refer ByteWheels_Setup_Version_1.0.docx)
 
-3.Open the project in eclipse and add payara server (by installing glassfish tool in eclipse market).
+3.Open eclipse IDE 
+	* Click on File -> Import.. -> Git -> Projects from git -> Existing Local Repository -> 
+	    Add -> Browse (To ByteWheelsProject/ByteWheels folder that we cloned recently)
+	    -> Next -> Next -> Finish
+	* Build the project
+
+4. Add payara server (by installing glassfish tool in eclipse market).
+	Define GlassFish runtime properties.
+		* Name : Glassfish bytewheels
+		* Glassfish location : home folder of glassfish server
+		* Java Location : Enter java path to jdk 8 home folder
+
+	Define GlassFish Application Server properties.
+		* Host Name : localhost
+		* Domain path: change it to the domain "bytewheels" that we created using the set up doc.
+		* Admin Name : admin
+		* Password : <empty> as we did not give any password while creating the password
+
+	* Start the server in eclipse
 
 references
 
