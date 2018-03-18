@@ -32,14 +32,13 @@ CONTENTS OF THIS FILE
 2.Eclipse neon or above
 3. Glassfish 4.0  or Payara-4.1.1.164 application server
 4.MySQL 
-
+NOTE: Payara and Glassfish servers are same.
 #################################
 		3.Installation
 #################################
 
-1. Java 7 or above references
+1. Java 8 or above references
 ------------------
-http://www.oracle.com/technetwork/java/java-archive-downloads-javase7-521261.html
 
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 --------------------
@@ -67,7 +66,9 @@ https://www.mysql.com/downloads/
 
 1. Execute "bytwheels.sql" scripts in mysql
 .
-2.Create datasource in payara (refer ByteWheels_Setup_Version_1.0.docx)
+2.Create datasource in payara 
+
+(refer ByteWheels_Setup_Version_1.0.docx)
 
 3.Open eclipse IDE 
 	* Click on File -> Import.. -> Git -> Projects from git -> Existing Local Repository -> 
@@ -98,7 +99,7 @@ https://www.packtpub.com/mapt/book/application_development/9781785285349/7/ch07l
 
 4.Make sure the following libraries are there in project 
   -Glassfish  system libraries
-  -JRE system libraries
+  -JRE system libraries (JDK 1.8 &  JRE 1.8)
   -Maven dependencies
   -Referenced libraires
 
@@ -106,8 +107,8 @@ https://www.packtpub.com/mapt/book/application_development/9781785285349/7/ch07l
 		5.Build and Run
 #################################
 
-1. project right click -> run as -> maven build
-2. eclipse -> menu -> project -> clean
+1. eclipse -> menu -> project -> clean
+2. eclipse -> menu -> project -> build project
 3. project right click -> run as Server -> select payara server.
 
 #################################
@@ -120,5 +121,5 @@ Refer RESTAPI's.odt
 #################################
 		6.Test cases
 #################################
+Not yet done
 
-Refer ByteWheelsTestCases.xlsx
